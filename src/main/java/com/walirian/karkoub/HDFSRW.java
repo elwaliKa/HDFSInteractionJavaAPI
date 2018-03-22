@@ -36,7 +36,7 @@ public class HDFSRW {
         System.setProperty("hadoop.home.dir", "/");
         //==Get the filesystem - HDFS==
         FileSystem fs = FileSystem.get(URI.create(hdfsuri), conf);
-
+ 
         //instances to use the functions to interact with hdfs
         CreateDirHDFS cr = new CreateDirHDFS(fs,path);
         AddFileToHDFS ad = new AddFileToHDFS(fs,fileName,fileContent,path);
